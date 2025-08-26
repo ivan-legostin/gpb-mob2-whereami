@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Options</title>
+    <style>
+      body {
+        background: #f6f8fa;
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background: #fff;
+        padding: 2rem 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+      }
+      label {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+      input[type="text"] {
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        transition: border 0.2s;
+      }
+      input[type="text"]:focus {
+        border: 1.5px solid #0078d7;
+        outline: none;
+      }
+      button {
+        margin-top: 1.2rem;
+        padding: 0.6rem 1.5rem;
+        background: linear-gradient(90deg, #0078d7 60%, #005fa3 100%);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.05rem;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,120,215,0.08);
+        transition: background 0.2s, transform 0.1s;
+      }
+      button:hover {
+        background: linear-gradient(90deg, #005fa3 60%, #0078d7 100%);
+        transform: translateY(-2px) scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="token">API Token:
+        <input id="token" type="text" placeholder="Enter your API token">
+      </label>
+      <button id="save">Save</button>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

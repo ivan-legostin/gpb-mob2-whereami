@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GPB mob2 location",
+  "version": "1.0.0",
+  "description": "Checks user location on the GPB mob2 page.",
+  "options_page": "options.html",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://mob2.gazprombank.ru/logon/LogonPoint/index.html"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mob2.gazprombank.ru/logon/LogonPoint/index.html"],
+      "js": ["location.js"]
+    }
+  ]
+}
