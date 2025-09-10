@@ -6,11 +6,15 @@
   "options_page": "options.html",
   "permissions": ["storage"],
   "host_permissions": [
-    "https://mob2.gazprombank.ru/logon/LogonPoint/index.html"
+    "https://mob2.gazprombank.ru/logon/LogonPoint/index.html",
+    "https://mob2.gazprombank.ru/logon/LogonPoint/tmindex.html"
   ],
   "content_scripts": [
     {
-      "matches": ["https://mob2.gazprombank.ru/logon/LogonPoint/index.html"],
+      "matches": [
+        "https://mob2.gazprombank.ru/logon/LogonPoint/index.html",
+        "https://mob2.gazprombank.ru/logon/LogonPoint/tmindex.html"
+      ],
       "js": ["location.js"]
     }
   ]
